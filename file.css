@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One|Baloo+Chettan|Pacifico|Acme');
+/*
+$heath: #561420;
+$tamarillo: #821122;
+$twine: #C59A6F;
+$mine-gray: #333333;
+$silver: #CCCCCC;
+$alabaster: #FCFCFC;
+$facebook-color: #3b5998;
+$linkedin-color: #0077B5; */
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Navigation */
+.nav, .nav-tabs, .nav-stacked {
+  padding: 0px;
+  display: inline;
+  position: fixed;
+  top: 30vh;
+  left: 89vw;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  li {
+    &:hover {
+      background-color: $heath;
+    }
+    a {
+      display: block;
+      border: none;
+      margin: 0px;
+      color: $alabaster;
+      background-color: $heath;
+      &:hover {
+        background-color: $heath;
+      }
+    }
+  }
+}
+
+// Fixed Backgrounds on Scroll
+.background {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 110vh;
+  width: 100%;
+  /*The Sections*/
+ &:nth-child(2) {
+   background-color: $mine-gray;
+ }
+ &:nth-child(3) {
+     background-image: url('https://github.com/Alanh168/Alanh168.github.io/blob/master/img/about.jpg?raw=true');
+ }
+ &:nth-child(4) {
+   background-image: url('https://lh6.googleusercontent.com/O9xTin7kazGFm4UHK2NylOVkK1ST5il4ty-a2hm3UThAdprYAIN_Dt6gmzM2LxT_kPzA9pNG37Oh6Q=w1920-h917');
+ }
+ &:nth-child(5) {
+  background-image: url('https://lh5.googleusercontent.com/L-y2i5T1jYsVW0uJOPYssiWzF2K6rwTWIKi1zRHZyRaEbv-L1tjFuoG5cM54XTvQ_Ms9Ft1mrPrLuQ=w1920-h917-rw');
+ }
+ &:nth-child(6) {
+   background-color: $silver;
+ }
+}
+
+.fade-in {
+  display: none;
+}
+
+#home {
+  background-image: url('https://alanmhernandez.com/img/home.jpg');
+  color: white;
+  -webkit-text-stroke: 2px black;
+  text-align: center;
+  font-family: 'Baloo Chettan';
+  h1 {
+    top: auto;
+    bottom: auto;
+    font-size: 60px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 34px;
+    font-weight: 700;
+  }
+}
+
+.underline {
+  display: inline-block;
+  border-bottom: 2px solid $tamarillo;
+}
+
+#about {
+  background-image: url('https://alanmhernandez.com/img/about.jpg');
+  color: $tamarillo;
+  font-family: Acme;
+  text-align: center;
+  h1 {
+    text-align: center;
+  }
+  h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+  }
+  p {
+    color: $mine-gray;
+    font-size: 20px;
+    text-align: left;
+  }
+  img
+  {
+    margin-top: 50px;
+    max-width: 300px;
+    height: auto;
+    box-shadow: 0 0 8px 8px $alabaster inset;
+  }
+}
+
+#experience {
+  background-image: url('https://alanmhernandez.com/img/experience.png');
+  color: $tamarillo;
+  text-align: center;
+  font-family: Acme;
+  h3 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  li {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .col-md-6 {
+    text-align: center;
+  }
+  .row {
+    padding-bottom: 5%;
+  }
+  .divider {
+    border-left: 2px solid $tamarillo;
+  }
+}
+
+#portfolio {
+  background-image: url('https://alanmhernandez.com/img/portfolio.jpg');
+  color: white;
+  text-align: center;
+  font-family: Acme;
+  .row {
+    margin-bottom: 30px;
+  }
+}
+
+#skills {
+
+}
+
+#contact {
+  background-image: url('https://alanmhernandez.com/img/contact.jpg');
+  min-height: 100vh;
+  color: $alabaster;
+  font-family: Acme;
+  text-align: center;
+  .underline {
+    margin-bottom: 50px;
+  }
+  h2 {
+    text-align: left;
+  }
+  p {
+    text-align: left;
+    color: $tamarillo;
+    font-size: 24px;
+  }
+  a {
+    text-align: left;
+  }
+  i {
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    margin: 10px;
+    background-color: $alabaster;
+    border: 2px solid black;
+  }
+  #free-code-camp {
+    width: 85px;
+    height: 75px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: darkgreen;
+    &:hover {
+      color: white;
+      background-color: darkgreen;
+    }
+  }
+  #facebook {
+    color: $facebook-color;
+    &:hover {
+      color: white;
+      background-color: $facebook-color;
+    }
+  }
+  #linkedin {
+    color: $linkedin-color;
+    &:hover {
+      color: white;
+      background-color: $linkedin-color;
+    }
+  }
+  #github {
+    color: black;
+    &:hover {
+      color: white;
+      background-color: black;
+    }
+  }
+}
+
+footer {
+  border: 1px solid black;
+  box-sizing: border-box;
+  box-shadow:inset 0 15px 5px -16px #111;
+  background-color: $heath;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+  p {
+    margin: 12px 0;
+    font-size: 14px;
+    color: white;
+  }
+}
